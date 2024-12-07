@@ -1,5 +1,7 @@
 #include <stdio.h>
-float Add(float x, float y, float z);
+
+void Add(float x, float y, float z);
+
 
 int main ()
 {
@@ -10,11 +12,14 @@ int main ()
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
+    
+    printf("Select (1-4): ");
+    scanf("%d", &choice);
     switch (choice)
     {
         case 1:
-            scanf("%f",Num1);
-            scanf("%f", Num2);
+            scanf("%f",&Num1);
+            scanf("%f", &Num2);
             Add(Num1,Num2,Result);
         break;
         case 2:
@@ -31,6 +36,7 @@ int main ()
     return 0;
 }
 
-float Add(float x, float y, float z){
-    return z = x+y;
+void Add(float x, float y, float z){
+    z = x+y;
+    printf("%f",z);
 }
