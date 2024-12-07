@@ -33,6 +33,7 @@ int main ()
             Result = Multiply(Num1, Num2);
         break;
         case 4:
+        Result = Division(Num1, Num2);
         break;
         default:
             printf("Select (1-4): ");
@@ -54,3 +55,8 @@ float Substraction(float Num1, float Num2)
 {
     return Num1-Num2;
 }
+
+float Division (float Num1, float Num2)
+{
+    return Num1/Num2;
+}  
