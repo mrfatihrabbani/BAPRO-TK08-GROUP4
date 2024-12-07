@@ -4,6 +4,7 @@
 float Multiply(float x, float y);
 float Add(float x, float y);
 float Substraction(float Num1, float Num2);
+float Division(float Num1, float Num2);
 
 int main ()
 {
