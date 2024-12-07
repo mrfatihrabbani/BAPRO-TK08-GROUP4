@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void Multiply(float x, float y, float z);
+
 int main ()
 {
     float Num1, Num2, Result;
@@ -16,9 +18,9 @@ int main ()
         case 2:
         break;
         case 3:
-        printf("scanf %f %f", &Num1, Num2);
-        Result = Num1 * Num2;
-        printf("Result: %.2f\n", Result);
+        scanf("%f", &Num1);
+        scanf("%f", &Num2);
+        Multiply(Num1, Num2, Result);
         break;
         case 4:
         break;
@@ -28,4 +30,9 @@ int main ()
         break;
     }
     return 0;
+}
+
+void Multiply(float x, float y, float z){
+    z = x * y;
+    printf("Result Calculation : %.2f",z);
 }
