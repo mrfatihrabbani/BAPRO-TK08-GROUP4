@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+float Multiply(float x, float y);
 float Add(float x, float y);
 float Substraction(float Num1, float Num2);
 
@@ -28,6 +30,7 @@ int main ()
             Result = Substraction(Num1, Num2);
         break;
         case 3:
+            Result = Multiply(Num1, Num2);
         break;
         case 4:
         break;
@@ -38,6 +41,10 @@ int main ()
     }
     printf("Result: %.2f", Result);
     return 0;
+}
+
+void Multiply(float x, float y){
+    return x * y;
 }
 
 float Add(float x, float y){
