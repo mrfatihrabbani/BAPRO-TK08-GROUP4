@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Add(float x, float y, float z);
+float Add(float x, float y);
 float Substraction(float Num1, float Num2);
 
 int main ()
@@ -22,7 +22,7 @@ int main ()
     switch (choice)
     {
         case 1:
-            Add(Num1,Num2,Result);
+            Result = Add(Num1,Num2);
         break;
         case 2:
             Result = Substraction(Num1, Num2);
@@ -40,10 +40,9 @@ int main ()
     return 0;
 }
 
-void Add(float x, float y, float z){
-    z = x+y;
-    printf("Result Calculation : %.2f",z);
-
+float Add(float x, float y){
+    return x+y;
+}
 float Substraction(float Num1, float Num2)
 {
     return Num1-Num2;
