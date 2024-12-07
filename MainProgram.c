@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-void Add(float x, float y, float z);
 float Substraction(float Num1, float Num2);
 
 int main ()
@@ -16,33 +15,26 @@ int main ()
     printf("2. Subtraction\n");
     printf("3. Multiplication\n");
     printf("4. Division\n");
-    
-    printf("Select (1-4): ");
-    scanf("%d", &choice);
     switch (choice)
     {
         case 1:
-            Add(Num1,Num2,Result);
         break;
         case 2:
-            Result = Substraction(Num1, Num2);
+        Result = Substraction(Num1, Num2);
         break;
         case 3:
+        Result = Num1 * Num2;
         break;
         case 4:
         break;
         default:
-            printf("Select (1-4): ");
-            scanf("%d", &choice);
+        printf("Select (1-4): ");
+        scanf("%d", &choice);
         break;
     }
     printf("Result: %.2f", Result);
     return 0;
 }
-
-void Add(float x, float y, float z){
-    z = x+y;
-    printf("Result Calculation : %.2f",z);
 
 float Substraction(float Num1, float Num2)
 {
