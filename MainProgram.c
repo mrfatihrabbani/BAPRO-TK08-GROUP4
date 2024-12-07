@@ -1,4 +1,5 @@
 #include <stdio.h>
+float Add(float x, float y, float z);
 
 int main ()
 {
@@ -12,11 +13,13 @@ int main ()
     switch (choice)
     {
         case 1:
+            scanf("%f",Num1);
+            scanf("%f", Num2);
+            Add(Num1,Num2,Result);
         break;
         case 2:
         break;
         case 3:
-        Result = Num1 * Num2;
         break;
         case 4:
         break;
@@ -26,4 +29,8 @@ int main ()
         break;
     }
     return 0;
+}
+
+float Add(float x, float y, float z){
+    return z = x+y;
 }
