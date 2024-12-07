@@ -43,7 +43,7 @@ int main ()
     return 0;
 }
 
-void Multiply(float x, float y){
+float Multiply(float x, float y){
     return x * y;
 }
 
