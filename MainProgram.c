@@ -18,7 +18,7 @@ int main ()
         case 3:
         printf("scanf %f %f", &Num1, Num2);
         Result = Num1 * Num2;
-        printf("Result: %.2f\n", Result);
+        printf("Result: %.2f\n", Result );
         break;
         case 4:
         break;
